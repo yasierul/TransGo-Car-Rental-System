@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root{
+  --main-color: #004aad;
+  --second-color: #5de0e6;
+  --text-color: #444;
+  --muted: #777;
+}
+
+body{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fb;
+  color: var(--text-color);
+}
+
+/* Header bar */
+.admin-headerbar{
+  background: linear-gradient(90deg, var(--main-color), var(--second-color));
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.admin-title{ display:flex; align-items:center; gap:10px; }
+.admin-title i{ font-size: 26px; }
+.admin-title h1{ font-weight:600; font-size:1.4rem; margin:0; }
+.admin-actions{ display:flex; align-items:center; gap:15px; }
+
+.btn-logout{
+  background:#fff;
+  color:var(--main-color);
+  padding:8px 12px;
+  border-radius:6px;
+  font-weight:500;
+  text-decoration:none;
+  transition:0.3s;
+}
+.btn-logout:hover{
+  background:var(--second-color);
+  color:#fff;
+}
+
+/* Dashboard Cards */
+.admin-content{ padding:50px 40px; }
+.cards{ display:flex; gap:30px; flex-wrap:wrap; justify-content:center; margin-bottom:30px; }
+.card{ background:#fff; padding:25px; border-radius:10px; display:flex; align-items:center; gap:15px; box-shadow:0 4px 20px rgba(0,0,0,0.1); width:240px; justify-content:center; }
+.card-icon{ font-size:35px; color:var(--main-color); }
+.card-body h3{ margin:0; font-size:2rem; }
+.card-body p{ margin:0; color:var(--muted); }
+
+/* Buttons */
+.admin-actions-row{ text-align:center; margin-top:20px; }
+.btn{
+  background:var(--main-color);
+  color:#fff;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  margin:0 10px;
+  transition:0.3s;
+}
+.btn:hover{ background:var(--second-color); }
+.btn.disabled{ opacity:0.6; pointer-events:none; }
+
+
+/* Delete button style */
+.btn-delete {
+  background: #e74c3c; /* merah solid */
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  display: inline-block;
+}
+.btn-delete:hover {
+  background: #c0392b; /* merah gelap bila hover */
+}
+
+
+
+/* Footer */
+.admin-footer{
+  text-align:center;
+  padding:20px;
+  background:#fff;
+  color:var(--muted);
+  border-top:1px solid #eee;
+}
